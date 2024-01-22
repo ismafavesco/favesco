@@ -86,7 +86,38 @@ export const AnimationContextWrapper = ({ children }) => {
 			},
 		},
 	};
-
+	const slideInFromLeft = {
+		hidden: {
+		  x: -50,
+		  opacity: 0,
+		},
+		visible: {
+		  x: 0,
+		  opacity: 1,
+		  transition: {
+			duration: 0.8,
+			ease: "easeOut",
+		  },
+		},
+	  };
+	  
+	  const slideInFromRight = {
+		hidden: {
+		  x: 50,
+		  opacity: 0,
+		},
+		visible: {
+		  x: 0,
+		  opacity: 1,
+		  transition: {
+			duration: 0.8,
+			ease: "easeOut",
+		  },
+		},
+	  };
+	  
+	  
+	
 	const values = {
 		riseUpVariant,
 		riseUpVariant2,
@@ -95,7 +126,11 @@ export const AnimationContextWrapper = ({ children }) => {
 		navVariants,
 		itemVariants,
 		tagVariant,
-	};
+		slideInFromLeft,  
+		slideInFromRight, 
+	  };
+
+
 	return (
 		<AnimationContext.Provider value={values}>
 			{children}

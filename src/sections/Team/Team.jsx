@@ -24,7 +24,7 @@ const Team = () => {
           <motion.img
             variants={tagVariant}
             src={TeamMember1}
-            alt="John Travolta, CEO Digitaly"
+            alt="John Travolta, CEO Favesco"
             className="max-w-[18rem] h-auto mb-3 lg:mb-6 w-[6rem] lg:w-[10rem]"
           />
           <motion.div
@@ -38,7 +38,7 @@ const Team = () => {
           >
             <p className="text-white md:text-xl lg:text-2xl">John Travolta</p>
             <span className="text-[#929294] text-[80%] lg:text-[100%]">
-              CEO Digitaly
+              CEO Favesco
             </span>
           </motion.div>
         </motion.div>
@@ -51,7 +51,7 @@ const Team = () => {
           <motion.img
             variants={tagVariant}
             src={TeamMember2}
-            alt="Frank Staven, Art Director Digitaly"
+            alt="Frank Staven, Art Director Favesco"
             className="lg:max-w-[18rem] h-auto mb-3 lg:mb-6 w-[6rem] lg:w-[10rem]"
           />
           <motion.div
@@ -65,7 +65,7 @@ const Team = () => {
           >
             <p className="text-white md:text-xl lg:text-2xl">Frank Staven</p>
             <span className="text-[#929294] text-[80%] lg:text-[100%]">
-              Art Director Digitaly
+              Art Director Favesco
             </span>
           </motion.div>
         </motion.div>
@@ -93,7 +93,7 @@ const Team = () => {
         </motion.p>
         <motion.div variants={riseUpItem}>
           <Button className="flex items-center w-fit mt-8 md:mb-0 text-black bg-[#e5e5e5] font-medium">
-            <span className="mr-4 ">All Digitaly Team</span> <FiArrowUpRight />
+            <span className="mr-4 ">All Favesco Team</span> <FiArrowUpRight />
           </Button>
         </motion.div>
       </motion.div>

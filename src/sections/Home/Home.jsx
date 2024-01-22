@@ -7,18 +7,19 @@ import { FaTiktok, FaApple, FaAmazon } from "react-icons/fa";
 import { FiArrowUpRight } from "react-icons/fi";
 import { AnimationContext } from "../../context/animation";
 import { motion } from "framer-motion";
+import { TypeAnimation } from 'react-type-animation';
 
 const Home = () => {
-  const { riseUpVariant, riseUpItem, fade } = useContext(AnimationContext);
+  const { riseUpVariant, riseUpItem, fade, slideInFromLeft } = useContext(AnimationContext);
 
   return (
     <div id="home" data-scroll-section>
       <Navbar />
       <div className="bg-[#f1f1f1] rounded-bl-[2rem] lg:rounded-bl-[4rem] rounded-br-[2rem] lg:rounded-br-[4rem] relative">
         <div className="h-[85vh] sl:h-[60vh] max-w-[1200px] m-auto relative">
-          <div className="py-[2rem] flex flex-col items-center lg:flex-row lg:gap-8 lg:px-[2rem] px-[1rem]">
+          <div className="py-[5rem] flex flex-col items-center lg:flex-row lg:gap-8 lg:px-[2rem] px-[1rem]">
             <motion.div
-              variants={riseUpVariant}
+              variants={slideInFromLeft}
               initial="hidden"
               whileInView="visible"
               className="lg:w-[60%] text-center lg:text-left mb-8 lg:mb-0"
@@ -29,7 +30,7 @@ const Home = () => {
                   whileInView={fade}
                   className="uppercase text-[3rem] md:text-[4rem] lg:text-[5rem] tracking-[-2px] lg:tracking-[-6px] leading-[4rem] lg:leading-[5rem] font-bold "
                 >
-                  Sharing
+                  you dream it,
                 </motion.h1>
                 <motion.img
                   initial={{ opacity: 0, y: 20 }}
@@ -38,7 +39,7 @@ const Home = () => {
                     y: 0,
                     transition: { delay: 0.7, duration: 1 },
                   }}
-                  className="lg:h-[60px] h-[50px] md:ml-4 md:block hidden"
+                  className="lg:h-[60px] h-[0px] md:ml-4 md:block hidden"
                   src={TrumpTag}
                   alt="Trump Tag"
                 />
@@ -46,10 +47,17 @@ const Home = () => {
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={fade}
-                className="uppercase text-[3rem] md:text-[4rem] lg:text-[5rem] tracking-[-2px] lg:tracking-[-6px] leading-[4rem] lg:leading-[5rem] font-bold "
-              >
-                Your Vision
+                className="uppercase text-[2.5rem] md:text-[4rem] lg:text-[5rem] tracking-[-2px] lg:tracking-[-6px] leading-[4rem] lg:leading-[5rem] font-bold "
+              > we &nbsp;
+                <TypeAnimation 
+            sequence={['do it',3000 , 'program it',3000, 'solve it', 3000]}
+            speed={50}
+            className="uppercase "
+            repeat={Infinity}
+            wrapper="span"
+            />
               </motion.h1>
+             
             </motion.div>
             <div className="lg:w-[40%] text-center lg:text-left">
               <motion.p
@@ -57,8 +65,9 @@ const Home = () => {
                 whileInView={fade}
                 className="lg:mb-8 mb-4 text-sm lg:text-base md:w-[80%] lg:w-full m-auto font-semibold text-gray-700"
               >
-                We love to create experiences that enable people to connect,
-                express themselves and establish meaningful relationships.
+                We're all about solving digital problems and creating software that makes business run easier and more efficient. 
+                Let's turn your big ideas into a modern, 
+                <br></br>user-friendly software that stands out.
               </motion.p>
               <div className="flex flex-col items-center md:flex-row md:justify-center lg:justify-start">
                 <motion.span initial={{ opacity: 0, y: 20 }} whileInView={fade}>

@@ -3,8 +3,11 @@ import { BiPlusMedical } from "react-icons/bi";
 import { motion } from "framer-motion";
 import { AnimationContext } from "../../context/animation";
 
+
 const Stats = () => {
+	
 	const { riseUpVariant, riseUpItem } = useContext(AnimationContext);
+
 	return (
 		<>
 			<motion.div
@@ -15,53 +18,53 @@ const Stats = () => {
 				<motion.div variants={riseUpItem}>
 					<div className='flex items-start'>
 						<p className='font-lato text-[3rem] lg:text-[5rem] font-bold'>
-							900
+							500
 						</p>
 						<BiPlusMedical className='mt-[12px] text-[1.2rem] lg:text-[3rem] text-[#0476b5]' />
 					</div>
 					<p className='lg:mt-[-20px] mt-[-10px] text-[70%] lg:text-[1rem] font-medium text-[#929294]'>
-						Successful Projects
+						Hours of Development
 					</p>
 				</motion.div>
 				<motion.div variants={riseUpItem}>
 					<div className='flex items-start'>
 						<p className='font-lato text-[3rem] lg:text-[5rem] font-bold'>
-							600
+							20
 						</p>
 						<BiPlusMedical className='mt-[12px] text-[1.2rem] lg:text-[3rem] text-[#f53627]' />
 					</div>
 					<p className='lg:mt-[-20px] mt-[-10px] text-[70%] lg:text-[1rem] font-medium text-[#929294]'>
-						Super Happy Clients
+						Software Solutions
 					</p>
 				</motion.div>
 				<motion.div variants={riseUpItem}>
 					<div className='flex items-start'>
 						<p className='font-lato text-[3rem] lg:text-[5rem] font-bold'>
-							200
+							10
 						</p>
 						<BiPlusMedical className='mt-[12px] text-[1.2rem] lg:text-[3rem] text-[#ea8113]' />
 					</div>
 					<p className='lg:mt-[-20px] mt-[-10px] text-[70%] lg:text-[1rem] font-medium text-[#929294]'>
-						Adv Award Winners
+					Happy Clients 	
 					</p>
 				</motion.div>
 				<motion.div variants={riseUpItem} className='hidden lg:block'>
 					<p className='text-[1rem] text-[#929294]'>
-						Stay connected with us & get your digital marketing strategy in
-						place. We make digital marketing simple.
+					Embark on your tech journey with us. We tailor software solutions to bring your innovative ideas to life. Let's create something amazing together.
+
 					</p>
 				</motion.div>
+				
 			</motion.div>
-			<div className='flex flex-wrap justify-center gap-4 md:gap-0 lg:flex-nowrap items-center md:justify-between py-[1rem] border-b border-gray-600'>
-				<p className='text-[1.2rem] lg:text-[3rem] uppercase'>SEO</p>
-				<div className='bg-[#353535] hidden md:block h-[10px] w-[10px] lg:h-[20px] lg:w-[20px] rounded-[50%]'></div>
-				<p className='text-[1.2rem] lg:text-[3rem] uppercase'>
-					Branded research
-				</p>
-				<div className='bg-[#353535] hidden md:block h-[10px] w-[10px] lg:h-[20px] lg:w-[20px] rounded-[50%]'></div>
-				<p className='text-[1.2rem] lg:text-[3rem] uppercase'>cro</p>
-				<div className='bg-[#353535] hidden md:block h-[10px] w-[10px] lg:h-[20px] lg:w-[20px] rounded-[50%]'></div>
-			</div>
+			
+			<div className="relative overflow-hidden whitespace-nowrap">
+  <div className="flex gap-4 items-center justify-between py-4 border-b border-gray-600">
+    <div className="animate-slide">
+      <span className="text-[1.2rem] lg:text-[3rem] uppercase inline-block">Web pages - Mobile Apps - CRM - AI Implementation - SaaS</span>
+    </div>
+   
+  </div>
+</div>
 		</>
 	);
 };

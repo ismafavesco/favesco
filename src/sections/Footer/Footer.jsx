@@ -56,25 +56,25 @@ const Footer = () => {
             className="md:w-[40%] flex flex-col justify-between"
           >
             <motion.span variants={riseUpItem}>
-              <FooterLink text="Email" handle="Hello@Digitaly.yeah" />
+              <FooterLink text="Email" handle="Hello@Favesco.yeah" />
             </motion.span>
             <motion.span variants={riseUpItem}>
-              <FooterLink text="Instagram" handle="@Digitaly" />
+              <FooterLink text="Instagram" handle="@Favesco" />
             </motion.span>
             <motion.span variants={riseUpItem}>
-              <FooterLink text="Twitter" handle="@Digitaly" />
+              <FooterLink text="Twitter" handle="@Favesco" />
             </motion.span>
             <motion.span variants={riseUpItem}>
-              <FooterLink text="Medium" handle="@Digitaly" />
+              <FooterLink text="Medium" handle="@Favesco" />
             </motion.span>
             <motion.span variants={riseUpItem}>
-              <FooterLink text="Telegram" handle="@Digitaly" />
+              <FooterLink text="Telegram" handle="@Favesco" />
             </motion.span>
             <motion.span variants={riseUpItem}>
-              <FooterLink text="LinkedIn" handle="@Digitaly" />
+              <FooterLink text="LinkedIn" handle="@Favesco" />
             </motion.span>
             <motion.span variants={riseUpItem}>
-              <FooterLink text="Facebook" handle="@Digitaly" />
+              <FooterLink text="Facebook" handle="@Favesco" />
             </motion.span>
           </motion.div>
         </div>

@@ -11,7 +11,7 @@ const Navbar = () => {
 	const [nav, setNav] = useState(false);
 	const handleNav = () => {
 		setNav(!nav);
-	};
+	}; 
 
 	const { riseUpVariant, riseUpItem, navVariants, itemVariants, tagVariant } =
 		useContext(AnimationContext);
@@ -39,7 +39,7 @@ const Navbar = () => {
 							variants={riseUpItem}
 							src={Logo}
 							alt='Logo'
-							className='h-[25px]'
+							className='h-[30px]'
 						/>
 					</Link>
 					<Link
