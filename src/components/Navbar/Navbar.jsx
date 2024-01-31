@@ -18,7 +18,7 @@ const Navbar = () => {
 
 	return (
 		<>
-			<div className='bg-[#f1f1f1] relative z-10'>
+			<div className=' bg-[#f1f1f1] relative z-10 '>
 				<motion.div
 					variants={riseUpVariant}
 					initial='hidden'

@@ -4,7 +4,7 @@ import Tag1 from "../../assets/images/Deliver Wave Tag.png";
 import Tag2 from "../../assets/images/Deliver Trump Circle.png";
 import { motion } from "framer-motion";
 import { AnimationContext } from "../../context/animation";
-
+import SelectedWork from "../../components/Work/SelectedWork";
 const Deliver = () => {
   const { riseUpVariant, riseUpItem, tagVariant } =
     useContext(AnimationContext);
@@ -30,7 +30,7 @@ const Deliver = () => {
           </motion.p>
           <motion.img
             variants={riseUpItem}
-            className="h-[80px] hidden lg:block"
+            className="xs:h-[20px] md:h-[40px] lg:h-[80px] lg:block"
             src={Tag1}
             alt="Tag 1"
           />
@@ -47,27 +47,35 @@ const Deliver = () => {
           whileInView="visible"
           className="flex flex-wrap md:flex-nowrap gap-8"
         >
+
           <motion.p
             variants={riseUpItem}
             className="text-[#929294] font-medium lg:text-base text-[80%]"
           >
-            Custom digital strategy informed by a powerful appraisal & your
-            business deserves more than a pre-packed strategy
+            Think of us as your personal business tailors. 
+            We don’t do one-size-fits-all; we craft strategies that fit your business and attach to it.
+             Unique? Absolutely. Effective? Try it Yourself!
           </motion.p>
           <motion.p
             variants={riseUpItem}
             className="text-[#929294] font-medium lg:text-base text-[80%]"
           >
-            See the progress we are making & what's driving results, anytime, we
-            keep you consistently, transparently informed.
+            We use Trello so you can see the progress we have & the pace we are working, we
+            keep you consistently informed.
           </motion.p>
           <motion.p
             variants={riseUpItem}
             className="text-[#929294] font-medium lg:text-base text-[80%]"
           >
-            Services that dovetail together for your greatest ROI, rowing in the
-            same direction towards your growth goals.
+           From basic landing pages to sophisticated mobile apps, we offer flexible partnership models—single payments or monthly subscriptions—adapted to your needs, 
+           ensuring dedicated support and digital solutions, Consider us as your IT department.
           </motion.p>
+          <motion.img
+            variants={tagVariant}
+            className="h-[60px] md:hidden"
+            src={Tag2}
+            alt="Tag 2"
+          />
         </motion.div>
       </div>
     </div>

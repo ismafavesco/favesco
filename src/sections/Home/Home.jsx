@@ -76,37 +76,7 @@ const Home = () => {
                     <FiArrowUpRight />
                   </Button>
                 </motion.span>
-                <motion.div
-                  variants={riseUpVariant}
-                  initial="hidden"
-                  whileInView="visible"
-                  className="md:ml-8 flex"
-                >
-                  <a href="">
-                    <motion.div
-                      variants={riseUpItem}
-                      className="bg-black flex items-center justify-center text-white p-2 rounded-[50%] h-[50px] w-[50px] border-2 border-white"
-                    >
-                      <FaTiktok size={20} />
-                    </motion.div>
-                  </a>
-                  <a href="">
-                    <motion.div
-                      variants={riseUpItem}
-                      className="bg-black flex items-center justify-center text-white p-2 rounded-[50%] h-[50px] w-[50px] border-2 border-white -ml-2"
-                    >
-                      <FaApple size={20} />
-                    </motion.div>
-                  </a>
-                  <a href="">
-                    <motion.div
-                      variants={riseUpItem}
-                      className="bg-black flex items-center justify-center text-white p-2 rounded-[50%] h-[50px] w-[50px] border-2 border-white -ml-2"
-                    >
-                      <FaAmazon size={20} />
-                    </motion.div>
-                  </a>
-                </motion.div>
+              
               </div>
             </div>
           </div>

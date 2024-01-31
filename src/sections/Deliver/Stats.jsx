@@ -34,7 +34,7 @@ const Stats = () => {
 						<BiPlusMedical className='mt-[12px] text-[1.2rem] lg:text-[3rem] text-[#f53627]' />
 					</div>
 					<p className='lg:mt-[-20px] mt-[-10px] text-[70%] lg:text-[1rem] font-medium text-[#929294]'>
-						Software Solutions
+						Technologies 
 					</p>
 				</motion.div>
 				<motion.div variants={riseUpItem}>
@@ -50,7 +50,7 @@ const Stats = () => {
 				</motion.div>
 				<motion.div variants={riseUpItem} className='hidden lg:block'>
 					<p className='text-[1rem] text-[#929294]'>
-					Embark on your tech journey with us. We tailor software solutions to bring your innovative ideas to life. Let's create something amazing together.
+					Buisnesses not using digital solutions lose opportunities for growth and profitability. 
 
 					</p>
 				</motion.div>
@@ -60,7 +60,7 @@ const Stats = () => {
 			<div className="relative overflow-hidden whitespace-nowrap">
   <div className="flex gap-4 items-center justify-between py-4 border-b border-gray-600">
     <div className="animate-slide">
-      <span className="text-[1.2rem] lg:text-[3rem] uppercase inline-block">Web pages - Mobile Apps - CRM - AI Implementation - SaaS</span>
+      <span className="text-[1.2rem] lg:text-[3rem] uppercase inline-block">Web pages - E-commerce - Mobile Apps - CRM - AI Automation - SaaS - Data Bases </span>
     </div>
    
   </div>
