@@ -4,10 +4,11 @@ import Tag1 from "../../assets/images/Deliver Wave Tag.png";
 import Tag2 from "../../assets/images/Deliver Trump Circle.png";
 import { motion } from "framer-motion";
 import { AnimationContext } from "../../context/animation";
-import SelectedWork from "../../components/Work/SelectedWork";
+
 const Deliver = () => {
   const { riseUpVariant, riseUpItem, tagVariant } =
     useContext(AnimationContext);
+    
   return (
     <div
       id="about"
@@ -54,21 +55,20 @@ const Deliver = () => {
           >
             Think of us as your personal business tailors. 
             We don’t do one-size-fits-all; we craft strategies that fit your business and attach to it.
-             Unique? Absolutely. Effective? Try it Yourself!
+            Effective? Try it Yourself!
           </motion.p>
           <motion.p
             variants={riseUpItem}
             className="text-[#929294] font-medium lg:text-base text-[80%]"
           >
-            We use Trello so you can see the progress we have & the pace we are working, we
-            keep you consistently informed.
+            We use Trello and Notion to make sure you recieve the best experience and updates from our team.
           </motion.p>
           <motion.p
             variants={riseUpItem}
             className="text-[#929294] font-medium lg:text-base text-[80%]"
           >
-           From basic landing pages to sophisticated mobile apps, we offer flexible partnership models—single payments or monthly subscriptions—adapted to your needs, 
-           ensuring dedicated support and digital solutions, Consider us as your IT department.
+         From landing pages to sophisticated mobile apps, we offer flexible partnership models, single payments or monthly subscriptions adapted to your needs, 
+           ensuring dedicated support and solutions for your buisness, Consider us as your IT department.
           </motion.p>
           <motion.img
             variants={tagVariant}

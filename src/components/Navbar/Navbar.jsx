@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import Logo from "../../assets/images/Logo.png";
@@ -13,25 +13,31 @@ const Navbar = () => {
 		setNav(!nav);
 	}; 
 
+
 	const { riseUpVariant, riseUpItem, navVariants, itemVariants, tagVariant } =
 		useContext(AnimationContext);
+		
+
+		
 
 	return (
 		<>
-			<div className=' bg-[#f1f1f1] relative z-10 '>
+			<div className=' bg-[#f1f1f1] relative z-10'>
+
 				<motion.div
 					variants={riseUpVariant}
 					initial='hidden'
 					whileInView='visible'
-					className='flex flex-row justify-between items-center py-4 px-4 lg:px-8 pb-4 lg:pb-8 border-b border-[#dddddd] max-w-[1200px] m-auto'>
+					className='flex flex-row justify-between items-center py-6 px-4 lg:px-20 pb-4 lg:pb-8 border-b border-[#dddddd] max-w-[1200px] m-auto'>
 					<Link
-						to='about'
-						className='cursor-pointer text-gray-700 font-semibold text-[80%] lg:text-[1rem] pt-[8px] hidden md:flex'>
-						<motion.span variants={riseUpItem}>About Us</motion.span>
+						  to="about"
+						  className="transition duration-300 ease-in-out hover:scale-110 cursor-pointer text-gray-700 font-semibold text-[80%] lg:text-[1rem] pt-[8px] hidden md:flex"
+						>
+						  <motion.span variants={riseUpItem}>About Us</motion.span>
 					</Link>
 					<Link
 						to='project'
-						className='cursor-pointer text-gray-700 font-semibold text-[80%] lg:text-[1rem] pt-[8px] hidden md:flex'>
+						className='transition duration-300 ease-in-out hover:scale-110 cursor-pointer text-gray-700 font-semibold text-[80%] lg:text-[1rem] pt-[8px] hidden md:flex'>
 						<motion.span variants={riseUpItem}>Project</motion.span>
 					</Link>
 					<Link to='home' className='cursor-pointer'>
@@ -44,13 +50,13 @@ const Navbar = () => {
 					</Link>
 					<Link
 						to='services'
-						className='cursor-pointer text-gray-700 font-semibold text-[80%] lg:text-[1rem] pt-[8px] hidden md:flex'
+						className='transition duration-300 ease-in-out hover:scale-110 cursor-pointer text-gray-700 font-semibold text-[80%] lg:text-[1rem] pt-[8px] hidden md:flex'
 						href=''>
 						<motion.span variants={riseUpItem}>Services</motion.span>
 					</Link>
 					<Link
 						to='contact'
-						className='cursor-pointer text-gray-700 font-semibold text-[80%] lg:text-[1rem] pt-[8px] hidden md:flex'
+						className='transition duration-300 ease-in-out hover:scale-110 cursor-pointer text-gray-700 font-semibold text-[80%] lg:text-[1rem] pt-[8px] hidden md:flex'
 						href=''>
 						<motion.span variants={riseUpItem}> Contact Us</motion.span>{" "}
 					</Link>
@@ -61,6 +67,7 @@ const Navbar = () => {
 						<HiOutlineMenuAlt3 size={25} />
 					</motion.div>
 				</motion.div>
+
 			</div>
 			<AnimatePresence>
 				<motion.div

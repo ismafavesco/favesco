@@ -1,47 +1,47 @@
-import React, { useEffect, useRef } from 'react';
-import { X } from 'lucide-react'; 
-import Contact from '../Contact/Contact';
+import { AnimatePresence, motion } from "framer-motion";
+import { useState } from "react";
+import Contact from "../Contact/Contact"; 
 
-function Modal({ onClose }) {
-    const modalRef = useRef();
+const ExampleWrapper = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  return (
+    <div className="   place-content-left">
+      <button
+        onClick={() => setIsOpen(true)}
+        className="flex items-center justify-center bg-gradient-to-r from-violet-600 to-indigo-600 text-white font-semibold py-2 px-4 md:py-4 md:px-8 lg:py-5 lg:px-10 rounded-lg hover:bg-sky-800 focus:outline-none focus:ring-2 focus:ring-sky-700 focus:ring-opacity-50 shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 text-lg md:text-xl lg:text-2xl"
+      >
+        Let's Start!
+      </button>
+      <SpringModal isOpen={isOpen} setIsOpen={setIsOpen} />
+    </div>
+  );
+};
 
-    useEffect(() => {
-        // When the modal is open, set the body's overflow to hidden
-        document.body.style.overflow = 'hidden';
-
-        // When the modal is closed or unmounted, reset the body's overflow
-        return () => {
-            document.body.style.overflow = 'visible';
-        };
-    }, []); // The empty array ensures this effect runs once on mount and on unmount
-
-    const closeModal = (e) => {
-        if (modalRef.current === e.target) {
-            onClose();
-        }
-    }
-
-    return (
-        <div 
-            className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-50 flex justify-center items-center p-4"
-            ref={modalRef}
-            onClick={closeModal} // to close the modal when the overlay is clicked
+const SpringModal = ({ isOpen, setIsOpen }) => {
+  return (
+    <AnimatePresence>
+      {isOpen && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          onClick={() => setIsOpen(false)}
+          className=" backdrop-blur p-18 fixed inset-0 z-50 grid place-items-center  cursor-pointer"
         >
-            <div 
-                className="bg-white rounded-lg w-full max-w-md mx-auto overflow-y-auto p-6"
-                onClick={e => e.stopPropagation()} // to prevent clicks from closing the modal
-            >
-                <button onClick={onClose} className="text-gray-600 float-right">
-                    <X size={30} />
-                </button>
-                {/* Modal Content */}
-                <h1 className="text-black text-4xl lg:text-4xl font-semibold text-center  lg:my-5">
-                Contact Us
-                    </h1>
-                <Contact />
-            </div>
-        </div>
-    )
-}
+          <motion.div
+            initial={{ scale: 0, rotate: "12.5deg" }}
+            animate={{ scale: 1, rotate: "0deg" }}
+            exit={{ scale: 0, rotate: "0deg" }}
+            onClick={(e) => e.stopPropagation()}
+            className="bg-gradient-to-br from-violet-600 to-indigo-600 text-white p-6 rounded-lg w-full max-w-lg shadow-xl cursor-default relative overflow-hidden"
+          >
+            {/* Contact Form Component */}
+            <Contact />
+          </motion.div>
+        </motion.div>
+      )}
+    </AnimatePresence>
+  );
+};
 
-export default Modal;
+export default ExampleWrapper;

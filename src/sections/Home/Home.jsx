@@ -3,14 +3,13 @@ import Navbar from "../../components/Navbar/Navbar";
 import HomeBanner from "../../assets/images/Home Trump Banner.png";
 import TrumpTag from "../../assets/images/Trump Tag.png";
 import Button from "../../components/Button/Button";
-import { FaTiktok, FaApple, FaAmazon } from "react-icons/fa";
 import { FiArrowUpRight } from "react-icons/fi";
 import { AnimationContext } from "../../context/animation";
 import { motion } from "framer-motion";
 import { TypeAnimation } from 'react-type-animation';
 
 const Home = () => {
-  const { riseUpVariant, riseUpItem, fade, slideInFromLeft } = useContext(AnimationContext);
+  const { fade, slideInFromLeft } = useContext(AnimationContext);
 
   return (
     <div id="home" data-scroll-section>
@@ -81,14 +80,9 @@ const Home = () => {
             </div>
           </div>
           <div className="absolute bottom-[-14rem] hidden md:block">
-            <motion.img
-              initial={{ opacity: 0, y: 100 }}
-              whileInView={fade}
-              viewport={{ once: true }}
-              src={HomeBanner}
-              className="w-[80%] m-auto"
-              alt="Home Banner"
-            />
+           
+
+           
           </div>
         </div>
       </div>
