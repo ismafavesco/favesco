@@ -9,7 +9,7 @@ const CTA = () => {
     <section
       id="contact"
       data-scroll-section
-      className="text-[#fff] pb-[2rem] lg:w-[90%] max-w-[1200px] m-auto px-6 md:px-10 mt-[3rem] pt-5"
+      className="text-[#fff] pb-[2rem] lg:w-[90%] max-w-[1200px] m-auto px-6 md:px-10 "
     >
       <div className="relative">
         <motion.img

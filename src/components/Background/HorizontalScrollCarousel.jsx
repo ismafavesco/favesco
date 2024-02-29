@@ -4,7 +4,7 @@ import { FaLightbulb, FaPencilRuler, FaCode, FaBug, FaRocket, FaTools } from 're
 
 
 const stepIcons = {
-  Discovery: <FaLightbulb className="text-6xl md:text-8xl text-blue-500" />,
+  Discovery: <FaLightbulb className="text-6xl md:text-8xl text-orange-500" />,
   Design: <FaPencilRuler className="text-6xl md:text-8xl text-green-500" />,
   Development: <FaCode className="text-6xl md:text-8xl text-red-500" />,
   Testing: <FaBug className="text-6xl md:text-8xl text-yellow-500" />,
@@ -26,7 +26,7 @@ const HorizontalScrollCarousel = () => {
         
       <section ref={targetRef}       
  
-      className="relative h-[300vh] top-[-11rem]">
+      className=" relative h-[300vh] top-[-32rem]">
         <div className="sticky top-0  flex h-screen items-center overflow-hidden">
           <motion.div style={{ x }} className=" flex gap-12 " >
             {cards.map((card) => {
@@ -42,13 +42,13 @@ const HorizontalScrollCarousel = () => {
     return (
       <motion.div
         key={card.id}
-        className="relative flex flex-col items-center justify-start h-[420px] w-[340px] lg:h-[500px] lg:w-[400px] xl:h-[560px] xl:w-[450px] 2xl:h-[620px] 2xl:w-[500px] rounded-2xl bg-[#29292C] shadow-lg transition-shadow duration-300 ease-in-out hover:shadow-xl"
+        className=" relative flex flex-col items-center justify-start h-[420px] w-[340px] lg:h-[500px] lg:w-[400px] xl:h-[560px] xl:w-[450px] 2xl:h-[620px] 2xl:w-[500px] rounded-2xl bg-[#29292C] shadow-lg transition-shadow duration-300 ease-in-out hover:shadow-xl"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
         {/* Icon */}
         <div className="mt-12">
-          {stepIcons[card.title] || <FaLightbulb className="text-6xl md:text-8xl text-blue-500 mb-4" />}
+          {stepIcons[card.title] || <FaLightbulb className="text-6xl md:text-8xl text-orange-500 mb-4" />}
         </div>
   
         {/* Title and Description */}

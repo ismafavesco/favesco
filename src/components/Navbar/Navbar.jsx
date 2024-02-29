@@ -36,10 +36,13 @@ const Navbar = () => {
 						  <motion.span variants={riseUpItem}>About Us</motion.span>
 					</Link>
 					<Link
-						to='project'
-						className='transition duration-300 ease-in-out hover:scale-110 cursor-pointer text-gray-700 font-semibold text-[80%] lg:text-[1rem] pt-[8px] hidden md:flex'>
-						<motion.span variants={riseUpItem}>Project</motion.span>
+						to='services'
+						className='transition duration-300 ease-in-out hover:scale-110 cursor-pointer text-gray-700 font-semibold text-[80%] lg:text-[1rem] pt-[8px] hidden md:flex'
+						href=''>
+						<motion.span variants={riseUpItem}>Services</motion.span>
 					</Link>
+
+					
 					<Link to='home' className='cursor-pointer'>
 						<motion.img
 							variants={riseUpItem}
@@ -49,10 +52,9 @@ const Navbar = () => {
 						/>
 					</Link>
 					<Link
-						to='services'
-						className='transition duration-300 ease-in-out hover:scale-110 cursor-pointer text-gray-700 font-semibold text-[80%] lg:text-[1rem] pt-[8px] hidden md:flex'
-						href=''>
-						<motion.span variants={riseUpItem}>Services</motion.span>
+						to='project'
+						className='transition duration-300 ease-in-out hover:scale-110 cursor-pointer text-gray-700 font-semibold text-[80%] lg:text-[1rem] pt-[8px] hidden md:flex'>
+						<motion.span variants={riseUpItem}>Project</motion.span>
 					</Link>
 					<Link
 						to='contact'
@@ -109,6 +111,12 @@ const Navbar = () => {
 								onClick={handleNav}
 								className='p-6 text-[1.5rem] hover:text-[2rem] transition-all duration-150 font-semibold'>
 								<motion.span variants={itemVariants}>Services</motion.span>
+							</Link>
+							<Link
+								to='project'
+								onClick={handleNav}
+								className='p-6 text-[1.5rem] hover:text-[2rem] transition-all duration-150 font-semibold'>
+								<motion.span variants={itemVariants}>Project</motion.span>
 							</Link>
 							<Link
 								to='contact'

@@ -1,8 +1,7 @@
 import React, { useContext } from 'react';
 import { motion,  } from 'framer-motion';
 import { AnimationContext } from '../../context/animation';
-import HorizontalScrollCarousel from "../HorizontalScrollCarousel/HorizontalScrollCarousel";
-import { FaArrowDown } from 'react-icons/fa';
+import HorizontalScrollCarousel from "../../components/Background/HorizontalScrollCarousel";
 
 const SelectedWorks = () => {
   const { fade } = useContext(AnimationContext);
@@ -21,18 +20,12 @@ const SelectedWorks = () => {
         initial={{ opacity: 0, y: 100 }} whileInView={fade}
         className="text-center sticky top-20 z-0 pt-5"
       >
-        <h2 className="text-2xl md:text-5xl  mb-4 uppercase text-[1.5rem] font-semibold lg:text-[3rem]   ">Our Development Process</h2>
-        <p className="md:text-lg text-[#929294]">
+        <h2 className="text-2xl md:text-5xl  mb-4 uppercase text-[1.5rem] font-semibold lg:text-[3rem]  ">Our Working Process</h2>
+        <p className="md:text-lg text-[#929294] pb-[25rem]">
           These are the steps we take to bring your project from idea to deployment.
         </p>
       </motion.div>
-       {/* Scroll Indicator */}
-       <div  className="flex justify-center items-center md:hidden ">
-        <motion.div animate={{ y: [0, -10, 0] }} transition={{ repeat: Infinity, duration: 2 }} className="text-xl flex flex-col items-center ">
-          <span className="text-sm">Scroll</span>
-          <FaArrowDown />
-        </motion.div>
-      </div>
+       
       <HorizontalScrollCarousel />
 
 
