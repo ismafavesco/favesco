@@ -68,19 +68,23 @@ export const Header = () => {
 };
 
 export const ProductCard = ({ product, translate }) => {
-    return (
-      <motion.div
-        style={{ x: translate }}
-        whileHover={{ y: -20 }}
-        className="group product h-96 w-[30rem] relative flex-shrink-0"
-      >
-        <Link to={product.link} className="block group-hover:shadow-2xl"> {/* Use 'to' instead of 'href' if using react-router-dom */}
-          <img src={product.thumbnail} alt={product.title} style={{ height: 400, width: 600 }} className="object-cover object-left-top absolute h-full w-full inset-0" />
-        </Link>
-        <div className="absolute inset-0 h-full w-full opacity-0 group-hover:opacity-80 bg-black pointer-events-none"></div>
-        <h2 className="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 text-white">
-          {product.title}
-        </h2>
-      </motion.div>
-    );
-  };  
+  return (
+    <motion.div
+      style={{ x: translate }}
+      whileHover={{ y: -20 }}
+      className="group product relative flex-shrink-0 w-[24rem]  lg:w-[30rem] sl:w-[40rem]"
+    >
+      <Link to={product.link} className="block group-hover:shadow-2xl">
+        <img
+          src={product.thumbnail}
+          alt={product.title}
+          className="object-cover object-left-top h-full w-full"
+        />
+      </Link>
+      <div className="absolute inset-0 h-full w-full opacity-0 group-hover:opacity-80 bg-black pointer-events-none"></div>
+      <h2 className="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 text-white">
+        {product.title}
+      </h2>
+    </motion.div>
+  );
+};
