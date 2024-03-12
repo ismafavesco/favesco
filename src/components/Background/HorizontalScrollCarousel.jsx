@@ -27,7 +27,7 @@ const HorizontalScrollCarousel = () => {
       <section ref={targetRef}       
  
       className=" relative h-[300vh] top-[-32rem]">
-        <div className="sticky top-0  flex h-screen items-center overflow-hidden">
+        <div className="sticky top-[6rem] lg:bottom-1   flex h-screen items-center overflow-hidden">
           <motion.div style={{ x }} className=" flex gap-12 " >
             {cards.map((card) => {
               return <Card card={card} key={card.id} />;
@@ -42,7 +42,7 @@ const HorizontalScrollCarousel = () => {
     return (
       <motion.div
         key={card.id}
-        className=" relative flex flex-col items-center justify-start h-[420px] w-[340px] lg:h-[500px] lg:w-[400px] xl:h-[560px] xl:w-[450px] 2xl:h-[620px] 2xl:w-[500px] rounded-2xl bg-[#29292C] shadow-lg transition-shadow duration-300 ease-in-out hover:shadow-xl"
+        className=" relative flex flex-col items-center justify-start h-[420px] w-[340px] lg:h-[450px] lg:w-[360px] sl:h-[500px] sl:w-[450px]  rounded-2xl bg-[#29292C] shadow-lg transition-shadow duration-300 ease-in-out hover:shadow-xl"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
@@ -80,27 +80,27 @@ const HorizontalScrollCarousel = () => {
     {
       title: 'Feedback',
       description: 'We adapt our designs based on your insights, to meet with your expectations and user needs.',
-      id: 2,
+      id: 3,
     },
     {
       title: 'Development',
       description: 'After getting green-light, we bring the design to life with clean, efficient code, ensuring your application is built perfectly.',
-      id: 3,
+      id: 4,
     },
     {
       title: 'Testing',
       description: 'We ensure your application performs flawlessly across all scenarios, guaranteeing perfect efficiency and user experience.',
-      id: 4,
+      id: 5,
     },
     {
       title: 'Deployment',
       description: 'Plan then execution, ensuring your application makes a smooth and successful entrance into the market or your buisness.',
-      id: 5,
+      id: 6,
     },
     {
       title: 'Maintenance',
       description: 'This phase includes ongoing updates and optimizations for one week free of charge, keeping your application performing flawlessly.',
-      id: 6,
+      id: 7,
     },
   ];
 
