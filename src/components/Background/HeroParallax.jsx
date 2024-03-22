@@ -14,17 +14,17 @@ export const HeroParallax = ({ products }) => {
     offset: ["start start", "end start"],
   });
 
-  const springConfig = { stiffness: 300, damping: 30, bounce: 100 };
+  const springConfig = { stiffness: 200, damping: 30, bounce: 10 };
 
   const translateX = useSpring(useTransform(scrollYProgress, [0, 1], [0, 4000]), springConfig);
   const translateXReverse = useSpring(useTransform(scrollYProgress, [0, 1], [0, -4000]), springConfig);
   const rotateX = useSpring(useTransform(scrollYProgress, [0, 0.2], [15, 0]), springConfig);
   const opacity = useSpring(useTransform(scrollYProgress, [0, 0.2], [0.2, 1]), springConfig);
   const rotateZ = useSpring(useTransform(scrollYProgress, [0, 0.2], [20, 0]), springConfig);
-  const translateY = useSpring(useTransform(scrollYProgress, [0, 1], [-500, 500]), springConfig);
+  const translateY = useSpring(useTransform(scrollYProgress, [0, .7], [-500, 500]), springConfig);
 
   return (
-    <div ref={ref} className="h-[160vh] lg:h-[220vh] sl:h-[130vh] py-40 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]">
+    <div ref={ref} className="h-[160vh] lg:h-[200vh] sl:h-[130vh] py-40 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]">
       <Header />
       <motion.div
         style={{
@@ -61,7 +61,7 @@ export const Header = () => {
         Development Showcase
       </h1>
       <p className="text-[#929294] max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
-        We build beautiful products with the latest technologies and frameworks. This  is a little of what our team can do.
+        We build beautiful products with the latest technologies and frameworks. 
       </p>
     </div>
   );
@@ -72,15 +72,22 @@ export const ProductCard = ({ product, translate }) => {
     <motion.div
       style={{ x: translate }}
       whileHover={{ y: -20 }}
-      className="group product relative flex-shrink-0 w-[24rem]  lg:w-[30rem] sl:w-[40rem]"
+      className="group product relative flex-shrink-0 w-[24rem] lg:w-[30rem] sl:w-[40rem]"
     >
-      <Link to={product.link} className="block group-hover:shadow-2xl">
+      <a
+        href={product.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block group-hover:shadow-2xl"
+      >
+
         <img
           src={product.thumbnail}
           alt={product.title}
           className="object-cover object-left-top h-full w-full"
         />
-      </Link>
+
+      </a>
       <div className="absolute inset-0 h-full w-full opacity-0 group-hover:opacity-80 bg-black pointer-events-none"></div>
       <h2 className="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 text-white">
         {product.title}

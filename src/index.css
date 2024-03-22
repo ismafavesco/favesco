@@ -7,11 +7,17 @@
     font-family: "Raleway", sans-serif;
     margin: 0;
     padding: 0;
+    
     box-sizing: border-box;
     scroll-behavior: smooth;
   }
 }
 
+
+
+html {
+  scroll-behavior: smooth;
+}
 
 
 @keyframes slide {
@@ -59,4 +65,5 @@
 .hoverText:has(+ .hoverText + .hoverText:hover) {
   font-weight: 300;
 }
+
 

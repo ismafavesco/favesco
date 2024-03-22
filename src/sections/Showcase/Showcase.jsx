@@ -12,7 +12,11 @@ export const products = [
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
   },
- 
+  {
+    title: "Esifi ",
+    link: "https://esifi-ismafavesco.vercel.app/",
+    thumbnail: "https://i.imgur.com/NVWMYy8.png", 
+  },
   {
     title: "Rogue",
     link: "https://userogue.com",
@@ -26,6 +30,7 @@ export const products = [
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/editorially.png",
   },
+  
   {
     title: "Editrix AI",
     link: "https://editrix.ai",
@@ -38,6 +43,7 @@ export const products = [
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/pixelperfect.png",
   },
+  
  
   {
     title: "Algochurn",
@@ -47,10 +53,9 @@ export const products = [
   },
   
   {
-    title: "Tailwind Master Kit",
-    link: "https://tailwindmasterkit.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png",
+    title: "Gymdex",
+    link: "https://gymdex.vercel.app/",
+    thumbnail: "https://i.imgur.com/FxB8GR0.png",
   },
   {
     title: "SmartBridge",
@@ -59,18 +64,19 @@ export const products = [
       "https://aceternity.com/images/products/thumbnails/new/smartbridge.png",
   },
   
- 
+
   {
     title: "Creme Digital",
     link: "https://cremedigital.com",
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/cremedigital.png",
   },
+  
   {
-    title: "Golden Bells Academy",
-    link: "https://goldenbellsacademy.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/goldenbellsacademy.png",
+    title: "Quiz AI",
+    link: "https://quizai-ten.vercel.app",
+    thumbnail: 
+     "https://i.imgur.com/Gx1g3si.png", 
   },
   {
     title: "Invoker Labs",
@@ -85,7 +91,7 @@ const Showcase = () => {
   const { riseUpVariant2, riseUpItem } = useContext(AnimationContext);
 
   return (
-    <div className="flex flex-col lg:justify-between align-top text-[#e5e5e5] pb-[8rem] w-auto mt-8 m-auto px-6 md:px-10 xxl:pt-[3rem]" data-scroll-section>
+    <div id="showcase" className="flex flex-col lg:justify-between align-top text-[#e5e5e5] pb-[8rem] w-auto mt-8 m-auto   xxl:pt-[3rem]" data-scroll-section>
       <motion.div variants={riseUpVariant2} initial="hidden" whileInView="visible" className="w-full">
         <HeroParallax products={products} />
       </motion.div>

@@ -1,12 +1,10 @@
-import React, { useContext } from "react";
-import Navbar from "../../components/Navbar/Navbar";
-import HomeBanner from "../../assets/images/Home Trump Banner.png";
-import TrumpTag from "../../assets/images/Trump Tag.png";
-import Button from "../../components/Button/Button";
-import { FiArrowUpRight } from "react-icons/fi";
-import { AnimationContext } from "../../context/animation";
-import { motion } from "framer-motion";
+import React, { useContext } from 'react';
+import Navbar from '../../components/Navbar/Navbar';
+import TrumpTag from '../../assets/images/Trump Tag.png';
+import { AnimationContext } from '../../context/animation';
+import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
+import QuoteButton  from '../../components/Button/QuoteButton'
 
 const Home = () => {
   const { fade, slideInFromLeft } = useContext(AnimationContext);
@@ -27,17 +25,13 @@ const Home = () => {
                 <motion.h1
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={fade}
-                  className="uppercase text-[3rem] md:text-[4rem] lg:text-[5rem] tracking-[-2px] lg:tracking-[-6px] leading-[4rem] lg:leading-[5rem] font-bold "
+                  className="uppercase text-[3rem] md:text-[4rem] lg:text-[5rem] tracking-[-2px] lg:tracking-[-6px] leading-[4rem] lg:leading-[5rem] font-bold"
                 >
                   you dream it,
                 </motion.h1>
                 <motion.img
                   initial={{ opacity: 0, y: 20 }}
-                  whileInView={{
-                    opacity: 1,
-                    y: 0,
-                    transition: { delay: 0.7, duration: 1 },
-                  }}
+                  whileInView={{ opacity: 1, y: 0, transition: { delay: 0.7, duration: 1 } }}
                   className="lg:h-[60px] h-[0px] md:ml-4 md:block hidden"
                   src={TrumpTag}
                   alt="Trump Tag"
@@ -46,17 +40,17 @@ const Home = () => {
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={fade}
-                className="uppercase text-[2.5rem] md:text-[4rem] lg:text-[5rem] tracking-[-2px] lg:tracking-[-6px] leading-[4rem] lg:leading-[5rem] font-bold "
-              > we &nbsp;
-                <TypeAnimation 
-            sequence={['do it',3000 , 'program it',3000, 'solve it', 3000]}
-            speed={50}
-            className="uppercase "
-            repeat={Infinity}
-            wrapper="span"
-            />
+                className="uppercase text-[2.5rem] md:text-[4rem] lg:text-[5rem] tracking-[-2px] lg:tracking-[-6px] leading-[4rem] lg:leading-[5rem] font-bold"
+              >
+                we &nbsp;
+                <TypeAnimation
+                  sequence={['do it', 3000, 'program it', 3000, 'solve it', 3000]}
+                  speed={50}
+                  className="uppercase"
+                  repeat={Infinity}
+                  wrapper="span"
+                />
               </motion.h1>
-             
             </motion.div>
             <div className="lg:w-[40%] text-center lg:text-left">
               <motion.p
@@ -64,25 +58,16 @@ const Home = () => {
                 whileInView={fade}
                 className="lg:mb-8 mb-4 text-sm lg:text-base md:w-[80%] lg:w-full m-auto font-semibold text-gray-700"
               >
-                We're all about solving digital problems and creating software that makes business run easier and more efficient. 
-                Let's turn your big ideas into a modern, 
-                <br></br>user-friendly software that stands out.
+               We're all about solving digital problems and creating software that makes businesses run easier and more efficiently. Let's turn your big ideas into modern, user-friendly software that stands out.
               </motion.p>
               <div className="flex flex-col items-center md:flex-row md:justify-center lg:justify-start">
-                <motion.span initial={{ opacity: 0, y: 20 }} whileInView={fade}>
-                  <Button className="flex items-center w-fit mb-4 md:mb-0 font-medium">
-                    <span className="mr-4">Start Project</span>{" "}
-                    <FiArrowUpRight />
-                  </Button>
-                </motion.span>
-              
+              <motion.span initial={{ opacity: 0, y: 20 }} whileInView={fade}>
+
+              <QuoteButton  /> 
+
+              </motion.span>
               </div>
             </div>
-          </div>
-          <div className="absolute bottom-[-14rem] hidden md:block">
-           
-
-           
           </div>
         </div>
       </div>

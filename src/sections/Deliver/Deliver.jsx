@@ -13,7 +13,7 @@ const Deliver = () => {
     <div
       id="about"
       data-scroll-section
-      className="h-full text-white pt-[5rem] pb-[2rem] lg:w-[90%] max-w-[1500px] m-auto px-6 md:px-10 md:pt-[15rem] lg:pb-[8rem]"
+      className="h-full text-white pb-[2rem] lg:w-[90%] max-w-[1500px] m-auto px-6 md:px-10 md:pt-[15rem] lg:pb-[8rem]"
     >
       <Stats />
       <div>
@@ -31,7 +31,7 @@ const Deliver = () => {
           </motion.p>
           <motion.img
             variants={riseUpItem}
-            className="xs:h-[20px] md:h-[40px] lg:h-[80px] lg:block"
+            className="xs:h-[23px] md:h-[40px] lg:h-[80px] lg:block"
             src={Tag1}
             alt="Tag 1"
           />
@@ -53,22 +53,18 @@ const Deliver = () => {
             variants={riseUpItem}
             className="text-[#929294] font-medium lg:text-base text-[80%]"
           >
-            Think of us as your personal business tailors. 
-            We don’t do one-size-fits-all; we craft strategies that fit your business and attach to it.
-            Effective? Try it Yourself!
+            Think of us as your personal business tailors. We don't do one-size-fits-all; we craft strategies that fit your business like a custom-made suit. Our goal is to make your digital dreams a reality and help you stand out in the competitive landscape.
           </motion.p>
           <motion.p
             variants={riseUpItem}
             className="text-[#929294] font-medium lg:text-base text-[80%]"
           >
-            We use Trello and Notion to make sure you recieve the best experience and updates from our team.
-          </motion.p>
+Our team of expert developers and designers work closely with you, keeping you in the loop every step of the way. We believe in transparency, collaboration, and delivering results that exceed your expectations.          </motion.p>
           <motion.p
             variants={riseUpItem}
             className="text-[#929294] font-medium lg:text-base text-[80%]"
           >
-         From landing pages to sophisticated mobile apps, we offer flexible partnership models, single payments or monthly subscriptions adapted to your needs, 
-           ensuring dedicated support and solutions for your buisness, Consider us as your IT department.
+         From landing pages to sophisticated mobile apps, we offer flexible partnership models to suit your needs. Whether you prefer a one-time project or an ongoing collaboration, we've got you covered. Our dedicated support  will make you feel like you have your very own IT department.
           </motion.p>
           <motion.img
             variants={tagVariant}

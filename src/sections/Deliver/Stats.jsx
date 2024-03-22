@@ -20,7 +20,7 @@ const Stats = () => {
 						<p className='font-lato text-[3rem] lg:text-[5rem] font-bold'>
 							500
 						</p>
-						<BiPlusMedical className='mt-[12px] text-[1.2rem] lg:text-[3rem] text-[#0476b5]' />
+						<BiPlusMedical className='mt-[12px] text-[1.2rem] lg:text-[3rem] text-[#a0d9f7]' />
 					</div>
 					<p className='lg:mt-[-20px] mt-[-10px] text-[70%] lg:text-[1rem] font-medium text-[#929294]'>
 						Hours of Development
@@ -31,7 +31,7 @@ const Stats = () => {
 						<p className='font-lato text-[3rem] lg:text-[5rem] font-bold'>
 							20
 						</p>
-						<BiPlusMedical className='mt-[12px] text-[1.2rem] lg:text-[3rem] text-[#f53627]' />
+						<BiPlusMedical className='mt-[12px] text-[1.2rem] lg:text-[3rem] text-[#0888ca]' />
 					</div>
 					<p className='lg:mt-[-20px] mt-[-10px] text-[70%] lg:text-[1rem] font-medium text-[#929294]'>
 						Technologies 
@@ -42,7 +42,7 @@ const Stats = () => {
 						<p className='font-lato text-[3rem] lg:text-[5rem] font-bold'>
 							10
 						</p>
-						<BiPlusMedical className='mt-[12px] text-[1.2rem] lg:text-[3rem] text-[#ea8113]' />
+						<BiPlusMedical className='mt-[12px] text-[1.2rem] lg:text-[3rem] text-[#7667ab]' />
 					</div>
 					<p className='lg:mt-[-20px] mt-[-10px] text-[70%] lg:text-[1rem] font-medium text-[#929294]'>
 					Happy Clients 	
@@ -60,7 +60,7 @@ const Stats = () => {
 			<div className="relative overflow-hidden whitespace-nowrap">
   <div className="flex gap-4 items-center justify-between py-4 border-b border-gray-600">
     <div className="animate-slide">
-      <span className="text-[1.2rem] lg:text-[3rem] uppercase inline-block">Web pages - E-commerce - Mobile Apps - CRM - AI Automation - SaaS - Data Bases </span>
+      <span className="text-[1.2rem] lg:text-[3rem] uppercase inline-block">Web Site - Landing Page - E-commerce - Mobile App - CRM - AI Automation - SaaS - Data Base - Admin Dashboard - Branding </span>
     </div>
    
   </div>
