@@ -7,7 +7,7 @@ const Contact = () => {
       <form
         action="https://getform.io/f/afbf98aa-27a1-44d2-9ee4-03db94811b87"
         method="POST"
-        className="space-y-8"
+        className="space-y-3"
       >
         {/* Name */}
         <div className="relative">

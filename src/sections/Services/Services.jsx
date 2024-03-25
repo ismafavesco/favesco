@@ -23,7 +23,7 @@ const Services = () => {
   return (
     <motion.div
       id="services"
-      className=" text-white max-w-[1400px]  mt-20 mx-auto px-6 md:px-10 rounded-lg"
+      className=" text-white max-w-[1400px] lg:mt-0  mt-20 mx-auto px-6 md:px-10 rounded-lg"
       initial="hidden"
       whileInView="visible"
       variants={containerVariants}
@@ -31,7 +31,7 @@ const Services = () => {
     >
       <div className="text-center lg:text-left lg:mb-12 mb-6">
         <motion.h2
-          className="pt-10 lg:pt-[18rem] uppercase text-[1.5rem] font-semibold lg:text-[3rem] w-full leading-[3rem]"
+          className="pt-10 lg:pt-[3rem] uppercase text-[1.5rem] font-semibold lg:text-[3rem] w-full leading-[3rem]"
           variants={itemVariants}
         >
           Services

@@ -35,14 +35,14 @@ const SpringModal = ({ isOpen, setIsOpen }) => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           onClick={() => setIsOpen(false)}
-          className=" fixed inset-2 z-50 grid place-items-center cursor-pointer bg-black bg-opacity-50 backdrop-filter backdrop-blur-sm"
+          className=" fixed inset-0 z-50 grid place-items-center cursor-pointer bg-black bg-opacity-50 backdrop-filter backdrop-blur-sm"
         >
           <motion.div
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             exit={{ scale: 0 }}
             onClick={(e) => e.stopPropagation()}
-            className="bg-white text-gray-800 p-6 sm:p-6 md:p-8 rounded-lg w-full max-w-sm sm:max-w-md md:max-w-lg shadow-xl cursor-default relative overflow-hidden"
+            className="bg-white  text-gray-800 p-6  rounded-lg w-full max-w-sm sm:max-w-md md:max-w-lg shadow-xl cursor-default relative overflow-hidden"
           >
             <button
               onClick={() => setIsOpen(false)}

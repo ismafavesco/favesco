@@ -7,7 +7,7 @@ const CTA = () => {
     <section
       id="contact"
       data-scroll-section
-      className="text-[#fff] max-w-[1500px] m-auto lg:pt-[8rem] grid pt-4 px-6 md:px-10"
+      className="text-[#fff] max-w-[1500px] m-auto lg:pt-[1rem] grid pt-4 px-6 md:px-10"
     >
       <motion.div
         className="relative"

@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import Stats from "./Stats";
 import multicolorButton from "../../assets/images/multicolorButton.png";
-import Tag2 from "../../assets/images/circlePhone.png";
+import circleNew from "../../assets/images/circleNew.png";
 import { motion } from "framer-motion";
 import { AnimationContext } from "../../context/animation";
 
@@ -13,7 +13,7 @@ const Deliver = () => {
     <div
       id="about"
       data-scroll-section
-      className="h-full text-white pb-[2rem] lg:w-[90%] max-w-[1500px] m-auto px-6 md:px-10 md:pt-[15rem] lg:pb-[8rem]"
+      className="h-full text-white pb-[2rem]  max-w-[1300px] m-auto px-6 md:px-10  lg:pb-[8rem]"
     >
       <Stats />
       <div>
@@ -21,7 +21,7 @@ const Deliver = () => {
           variants={riseUpVariant}
           initial="hidden"
           whileInView="visible"
-          className="flex justify-between items-center mb-8 mt-[4rem]"
+          className="flex items-center mb-8 mt-[4rem] justify-between"
         >
           <motion.p
             variants={riseUpItem}
@@ -31,14 +31,14 @@ const Deliver = () => {
           </motion.p>
           <motion.img
             variants={riseUpItem}
-            className="xs:h-[23px] md:h-[40px] lg:h-[80px] lg:block"
+            className="xs:h-[23px] md:h-[40px] lg:h-[80px] lg:block   "
             src={multicolorButton}
             alt="Tag 1"
           />
           <motion.img
             variants={tagVariant}
-            className="hidden md:block md:h-[50px] lg:h-[80px]"
-            src={Tag2}
+            className="hidden md:block md:h-[50px] lg:h-[80px] "
+            src={circleNew}
             alt="Tag 2"
           />
         </motion.div>
@@ -66,12 +66,7 @@ Our team of expert developers and designers work closely with you, keeping you i
           >
          From landing pages to sophisticated mobile apps, we offer flexible partnership models to suit your needs. Whether you prefer a one-time project or an ongoing collaboration, we've got you covered. Our dedicated support  will make you feel like you have your very own IT department.
           </motion.p>
-          <motion.img
-            variants={tagVariant}
-            className="h-[60px] md:hidden"
-            src={Tag2}
-            alt="Tag 2"
-          />
+          
         </motion.div>
       </div>
     </div>

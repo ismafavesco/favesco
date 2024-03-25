@@ -48,6 +48,16 @@ const Stats = () => {
 					Happy Clients 	
 					</p>
 				</motion.div>
+				<motion.div variants={riseUpItem}>
+					<div className='flex items-start'>
+						<p className='font-lato text-[3rem] lg:text-[5rem] font-bold'>
+							24/7
+						</p>
+					</div>
+					<p className='lg:mt-[-20px] mt-[-10px] text-[70%] lg:text-[1rem] font-medium text-[#929294]'>
+					1 on 1 Support
+					</p>
+				</motion.div>
 				<motion.div variants={riseUpItem} className='hidden lg:block'>
 					<p className='text-[1rem] text-[#929294]'>
 					Buisnesses not using digital solutions lose opportunities for growth and profitability. 

@@ -10,8 +10,8 @@ const Footer = () => {
 
   return (
     <div data-scroll-section>
-      <footer className="pt-[4rem] lg:pt-[8rem] lg:w-[90%] max-w-[1200px] m-auto px-4 sm:px-6 lg:px-10">
-        <div className="flex flex-col md:flex-row justify-between border-t border-gray-700 pt-8 sm:pt-12">
+      <footer className="pt-[4rem] lg:pt-[0rem] lg:w-[90%] max-w-[1200px] m-auto px-4 sm:px-6 lg:px-10">
+        <div className="flex flex-col md:flex-row justify-between border-t border-gray-700 pt-8 sm:pt-8">
           {/* Left */}
           <motion.div
             variants={riseUpVariant2}
@@ -37,17 +37,17 @@ const Footer = () => {
               variants={riseUpItem}
               className="flex space-x-4 sm:space-x-6 text-gray-400 mb-4 sm:mb-6"
             >
-              <a href="https://www.instagram.com/Favesco" target="_blank" rel="noopener noreferrer" className="hover:text-white transition duration-300">
+              <a href="https://www.instagram.com/Favesco.tech" target="_blank" rel="noopener noreferrer" className="hover:text-white transition duration-300">
                 <FaInstagram size={20} sm={24} />
               </a>
               <a href="https://www.facebook.com/Favesco" target="_blank" rel="noopener noreferrer" className="hover:text-white transition duration-300">
                 <FaFacebook size={20} sm={24} />
               </a>
-              <a href="https://twitter.com/Favesco" target="_blank" rel="noopener noreferrer" className="hover:text-white transition duration-300">
+              <a href="https://twitter.com/Favescotech" target="_blank" rel="noopener noreferrer" className="hover:text-white transition duration-300">
                 <FaTwitter size={20} sm={24} />
               </a>
               
-              <a href="https://www.tiktok.com/@Favesco" target="_blank" rel="noopener noreferrer" className="hover:text-white transition duration-300">
+              <a href="https://www.tiktok.com/@Favesco.tech" target="_blank" rel="noopener noreferrer" className="hover:text-white transition duration-300">
                 <FaTiktok size={20} sm={24} />
               </a>
             </motion.div>
