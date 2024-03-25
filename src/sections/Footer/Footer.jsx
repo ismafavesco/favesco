@@ -46,9 +46,7 @@ const Footer = () => {
               <a href="https://twitter.com/Favesco" target="_blank" rel="noopener noreferrer" className="hover:text-white transition duration-300">
                 <FaTwitter size={20} sm={24} />
               </a>
-              <a href="https://www.linkedin.com/company/Favesco" target="_blank" rel="noopener noreferrer" className="hover:text-white transition duration-300">
-                <FaLinkedin size={20} sm={24} />
-              </a>
+              
               <a href="https://www.tiktok.com/@Favesco" target="_blank" rel="noopener noreferrer" className="hover:text-white transition duration-300">
                 <FaTiktok size={20} sm={24} />
               </a>
