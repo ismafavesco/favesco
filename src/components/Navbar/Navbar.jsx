@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
-import Logo from "../../assets/images/Logo.png";
+import logoFavesco from "../../assets/images/logoFavesco.png";
 import { Link } from "react-scroll";
 import { motion, AnimatePresence } from "framer-motion";
 import { useContext } from "react";
@@ -53,7 +53,7 @@ const Navbar = () => {
           <Link to="home" className="cursor-pointer">
             <motion.img
               variants={riseUpItem}
-              src={Logo}
+              src={logoFavesco}
               alt="Logo"
               className="h-[30px]"
             />

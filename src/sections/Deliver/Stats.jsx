@@ -18,7 +18,7 @@ const Stats = () => {
 				<motion.div variants={riseUpItem}>
 					<div className='flex items-start'>
 						<p className='font-lato text-[3rem] lg:text-[5rem] font-bold'>
-							500
+							900
 						</p>
 						<BiPlusMedical className='mt-[12px] text-[1.2rem] lg:text-[3rem] text-[#a0d9f7]' />
 					</div>
@@ -34,13 +34,13 @@ const Stats = () => {
 						<BiPlusMedical className='mt-[12px] text-[1.2rem] lg:text-[3rem] text-[#0888ca]' />
 					</div>
 					<p className='lg:mt-[-20px] mt-[-10px] text-[70%] lg:text-[1rem] font-medium text-[#929294]'>
-						Technologies 
+						Technologies used
 					</p>
 				</motion.div>
 				<motion.div variants={riseUpItem}>
 					<div className='flex items-start'>
 						<p className='font-lato text-[3rem] lg:text-[5rem] font-bold'>
-							10
+							11
 						</p>
 						<BiPlusMedical className='mt-[12px] text-[1.2rem] lg:text-[3rem] text-[#7667ab]' />
 					</div>

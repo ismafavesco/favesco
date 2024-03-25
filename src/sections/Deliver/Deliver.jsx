@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import Stats from "./Stats";
-import Tag1 from "../../assets/images/Deliver Wave Tag.png";
-import Tag2 from "../../assets/images/Deliver Trump Circle.png";
+import multicolorButton from "../../assets/images/multicolorButton.png";
+import Tag2 from "../../assets/images/circlePhone.png";
 import { motion } from "framer-motion";
 import { AnimationContext } from "../../context/animation";
 
@@ -32,7 +32,7 @@ const Deliver = () => {
           <motion.img
             variants={riseUpItem}
             className="xs:h-[23px] md:h-[40px] lg:h-[80px] lg:block"
-            src={Tag1}
+            src={multicolorButton}
             alt="Tag 1"
           />
           <motion.img

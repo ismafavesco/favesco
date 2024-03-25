@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import Navbar from '../../components/Navbar/Navbar';
-import TrumpTag from '../../assets/images/Trump Tag.png';
+import TagCloud from '../../assets/images/TagCloud.png';
 import { AnimationContext } from '../../context/animation';
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
@@ -33,8 +33,8 @@ const Home = () => {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0, transition: { delay: 0.7, duration: 1 } }}
                   className="lg:h-[60px] h-[0px] md:ml-4 md:block hidden"
-                  src={TrumpTag}
-                  alt="Trump Tag"
+                  src={TagCloud}
+                  alt="TagCloud"
                 />
               </div>
               <motion.h1
