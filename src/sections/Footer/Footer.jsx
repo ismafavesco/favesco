@@ -3,7 +3,7 @@ import Logo from "../../assets/images/Logo White.png";
 import { motion } from "framer-motion";
 import { useContext } from "react";
 import { AnimationContext } from "../../context/animation";
-import { FaInstagram, FaFacebook, FaMapMarkerAlt, FaTwitter, FaLinkedin, FaWhatsapp, FaTiktok } from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaMapMarkerAlt, FaTwitter, FaWhatsapp, FaTiktok } from "react-icons/fa";
 
 const Footer = () => {
   const { riseUpVariant2, riseUpItem } = useContext(AnimationContext);
