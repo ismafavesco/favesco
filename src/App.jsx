@@ -7,8 +7,7 @@ import Showcase from "./sections/Showcase/Showcase";
 import CTA from "./sections/CTA/CTA";
 import Footer from "./sections/Footer/Footer";
 import { Analytics } from "@vercel/analytics/react"
-import { SpeedInsights } from "@vercel/speed-insights/next"
-
+import { SpeedInsights } from "@vercel/speed-insights/react"
 const App = () => {
   return (
     <main className="bg-[#1e1e20]">
