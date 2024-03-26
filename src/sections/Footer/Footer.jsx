@@ -40,9 +40,6 @@ const Footer = () => {
               <a href="https://www.instagram.com/Favesco.tech" target="_blank" rel="noopener noreferrer" className="hover:text-white transition duration-300">
                 <FaInstagram size={20} sm={24} />
               </a>
-              <a href="https://www.facebook.com/Favesco" target="_blank" rel="noopener noreferrer" className="hover:text-white transition duration-300">
-                <FaFacebook size={20} sm={24} />
-              </a>
               <a href="https://twitter.com/Favescotech" target="_blank" rel="noopener noreferrer" className="hover:text-white transition duration-300">
                 <FaTwitter size={20} sm={24} />
               </a>

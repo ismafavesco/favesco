@@ -6,7 +6,7 @@ import Services from "./sections/Services/Services";
 import Showcase from "./sections/Showcase/Showcase";
 import CTA from "./sections/CTA/CTA";
 import Footer from "./sections/Footer/Footer";
-
+import { Analytics } from "@vercel/analytics/react"
 
 const App = () => {
   return (
@@ -18,6 +18,7 @@ const App = () => {
       <Process />
       <CTA />
       <Footer />
+      <Analytics />
     </main>
   );
 };
