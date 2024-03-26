@@ -12,7 +12,7 @@ const SelectedWorks = () => {
         <motion.div initial={{ opacity: 0, y: 100 }} whileInView={fade} className="text-center sticky top-12 sl:top-[15rem] z-0 pt-6">
           
           <h2 className="text-2xl md:text-5xl mb-4 uppercase text-[1.5rem] font-semibold lg:text-[3rem] ">Our Working Process</h2>
-          <p className="md:text-lg text-[#929294] pb-[17rem] ">
+          <p className="md:text-lg text-[#929294] pb-[5rem] lg:pb-[30rem] ">
             These are the steps we take to bring your project from idea to deployment.
           </p>
         </motion.div>

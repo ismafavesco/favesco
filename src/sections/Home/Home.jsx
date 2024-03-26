@@ -63,9 +63,13 @@ const Home = () => {
               </div>
             </div>
           </div >
-          <div className="hidden md:block ">
+          <motion.div className="hidden md:block " 
+              variants={slideInFromLeft}
+              initial="hidden"
+              whileInView="visible">
+
             <Spline scene="https://prod.spline.design/ib20v65gF9lv9YUA/scene.splinecode" />
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
