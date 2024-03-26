@@ -7,6 +7,7 @@ import Showcase from "./sections/Showcase/Showcase";
 import CTA from "./sections/CTA/CTA";
 import Footer from "./sections/Footer/Footer";
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <CTA />
       <Footer />
       <Analytics />
+      <SpeedInsights/>
     </main>
   );
 };
