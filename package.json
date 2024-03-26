@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@splinetool/react-spline": "^2.2.6",
     "clsx": "^2.1.0",
     "framer-motion": "^7.5.3",
     "gsap": "^3.12.5",

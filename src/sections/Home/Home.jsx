@@ -5,6 +5,7 @@ import { AnimationContext } from '../../context/animation';
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
 import QuoteButton  from '../../components/Button/QuoteButton'
+import Spline from '@splinetool/react-spline';
 
 const Home = () => {
   const { fade, slideInFromLeft } = useContext(AnimationContext);
@@ -12,9 +13,9 @@ const Home = () => {
   return (
     <div id="home" data-scroll-section>
       <Navbar />
-      <div className="bg-[#f1f1f1] rounded-bl-[2rem] lg:rounded-bl-[4rem] rounded-br-[2rem] lg:rounded-br-[4rem] relative">
-        <div className="h-[85vh] sl:h-[60vh] max-w-[1200px] m-auto relative">
-          <div className="py-[5rem] flex flex-col items-center lg:flex-row lg:gap-8 lg:px-[2rem] px-[1rem]">
+      <div className="bg-[#f1f1f1] rounded-bl-[2rem] lg:rounded-bl-[4rem] lg:pb-[11rem] rounded-br-[2rem] lg:rounded-br-[4rem] relative">
+        <div className="h-[85vh] sl:h-[60vh] max-w-[1200px] m-auto  relative">
+          <div className="py-[5rem] lg:pb-[0rem]  flex flex-col items-center lg:flex-row lg:gap-8 lg:px-[2rem] px-[1rem]">
             <motion.div
               variants={slideInFromLeft}
               initial="hidden"
@@ -29,13 +30,7 @@ const Home = () => {
                 >
                   you dream it,
                 </motion.h1>
-                <motion.img
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0, transition: { delay: 0.7, duration: 1 } }}
-                  className="lg:h-[60px] h-[0px] md:ml-4 md:block hidden"
-                  src={TagCloud}
-                  alt="TagCloud"
-                />
+                
               </div>
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
@@ -56,7 +51,7 @@ const Home = () => {
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={fade}
-                className="lg:mb-8 mb-4 text-sm lg:text-base md:w-[80%] lg:w-full m-auto font-semibold text-gray-700"
+                className="lg:mb-8  mb-4 text-sm lg:text-lg md:w-[80%] lg:w-full m-auto font-semibold text-gray-700"
               >
                We're all about solving digital problems and creating software that makes businesses run easier and more efficiently. Let's turn your big ideas into modern, user-friendly software that stands out.
               </motion.p>
@@ -64,10 +59,12 @@ const Home = () => {
               <motion.span initial={{ opacity: 0, y: 20 }} whileInView={fade}>
 
               <QuoteButton  /> 
-
               </motion.span>
               </div>
             </div>
+          </div >
+          <div className="hidden md:block ">
+            <Spline scene="https://prod.spline.design/ib20v65gF9lv9YUA/scene.splinecode" />
           </div>
         </div>
       </div>

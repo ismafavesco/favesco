@@ -29,7 +29,7 @@ html {
   }
 }
 .animate-slide {
-  animation: slide 15s linear infinite;
+  animation: slide 25s linear infinite;
   animation-iteration-count: infinite;
 }
   

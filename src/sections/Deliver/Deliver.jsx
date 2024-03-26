@@ -13,7 +13,7 @@ const Deliver = () => {
     <div
       id="about"
       data-scroll-section
-      className="h-full text-white pb-[2rem]  max-w-[1300px] m-auto px-6 md:px-10  lg:pb-[8rem]"
+      className=" text-white pb-[2rem]   max-w-[1300px] m-auto px-6 md:px-10  lg:pb-[8rem] lg:mt-[10rem]"
     >
       <Stats />
       <div>
