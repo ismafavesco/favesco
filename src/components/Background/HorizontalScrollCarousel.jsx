@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { motion, useTransform, useScroll } from 'framer-motion';
+import { motion, useTransform, useScroll, useSpring } from 'framer-motion';
 import { FaLightbulb, FaComments, FaPencilRuler, FaCode, FaBug, FaRocket, FaTools } from 'react-icons/fa';
 import { Meteors } from '../Background/meteors';
 
@@ -13,46 +13,43 @@ const stepIcons = {
   Maintenance: <FaTools className="text-4xl md:text-6xl text-[#A0D9F7]" />,
 };
 
+const Card = React.memo(({ card }) => (
+  <motion.div
+    key={card.id}
+    className="relative flex flex-col items-center justify-start h-[420px] w-[340px] lg:h-[450px] lg:w-[450px] sl:h-[500px] sl:w-[450px] rounded-2xl overflow-hidden shadow-lg transition-shadow duration-300 ease-in-out lg:hover:shadow-xl bg-zinc-900"
+  >
+    <div className="relative z-10 flex flex-col items-center justify-center h-full w-full rounded-2xl p-8 overflow-hidden">
+      <div className="mt-8">{stepIcons[card.title] || <FaLightbulb className="text-6xl md:text-8xl mb-4" />}</div>
+      <div className="text-center">
+        <h2 className="mb-2 text-3xl lg:text-4xl font-semibold text-white">{card.title}</h2>
+        <p className="lg:text-xl text-lg text-gray-300">{card.description}</p>
+      </div>
+      <Meteors number={10} />
+    </div>
+  </motion.div>
+));
+
 const HorizontalScrollCarousel = () => {
   const targetRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: targetRef,
+  const { scrollYProgress } = useScroll({ target: targetRef });
+  const springScrollYProgress = useSpring(scrollYProgress, {
+    mass: .1,
+    stiffness: 200,
+    damping: 20,
+    restDelta: 0.001,
   });
-
-  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-101%"]);
+  const x = useTransform(springScrollYProgress, [0, 1], ["1%", "-101%"]);
 
   return (
     <section ref={targetRef} className="relative h-[300vh]">
       <div className="sticky top-12 lg:bottom-1 flex h-screen items-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-12">
-          {cards.map((card) => {
-            return <Card card={card} key={card.id} />;
-          })}
+          {cards.map((card) => (
+            <Card key={card.id} card={card} />
+          ))}
         </motion.div>
       </div>
     </section>
-  );
-};
-
-const Card = ({ card }) => {
-  return (
-    <motion.div
-      key={card.id}
-      className="relative flex flex-col items-center justify-start h-[420px] w-[340px] lg:h-[450px] lg:w-[450px] sl:h-[500px] sl:w-[450px] rounded-2xl overflow-hidden shadow-lg transition-shadow duration-300 ease-in-out lg:hover:shadow-xl bg-zinc-900"
-    >
-      <div className="relative z-10 flex flex-col items-center justify-center h-full w-full rounded-2xl p-8 overflow-hidden">
-        {/* Icon */}
-        <div className="mt-8">
-          {stepIcons[card.title] || <FaLightbulb className="text-6xl md:text-8xl mb-4" />}
-        </div>
-        {/* Title and Description */}
-        <div className="text-center">
-          <h2 className="mb-2 text-3xl lg:text-4xl font-semibold text-white">{card.title}</h2>
-          <p className="lg:text-xl text-lg text-gray-300">{card.description}</p>
-        </div>
-        <Meteors number={20} />
-      </div>
-    </motion.div>
   );
 };
 
@@ -64,7 +61,7 @@ const cards = [
   },
   {
     title: 'Design',
-    description: ' Transform your vision into compelling user experiences, blending aesthetic appeal with intuitive functionality.',
+    description: 'Transform your vision into compelling user experiences, blending aesthetic appeal with intuitive functionality.',
     id: 2,
   },
   {

@@ -14,10 +14,10 @@ const CTA = () => {
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0, transition: { duration: 0.5, delay: 0.3 } }}
       >
-        <div className="relative w-full h-[200px] lg:h-[400px] rounded-2xl overflow-hidden mb-[-4.5rem] lg:mb-[-10rem]">
+        <div className="relative w-full bg-zinc-900 h-[200px] lg:h-[400px] rounded-2xl overflow-hidden mb-[-4.5rem] lg:mb-[-10rem] ">
           <Gradient
             containerClassName="absolute "
-            size="70%"
+            size="80%"
             blendingValue="overlay"
             gradientBackgroundStart="rgba(0, 0, 0, 0.6)"
             gradientBackgroundEnd="rgba(0, 0, 0, 0.6)"
