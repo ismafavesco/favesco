@@ -13,9 +13,9 @@ export const products = [
       "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
   },
   {
-    title: "Esifi ",
-    link: "https://esifi-ismafavesco.vercel.app/",
-    thumbnail: "https://i.imgur.com/NVWMYy8.png", 
+    title: "Gymdex",
+    link: "https://gymdex.vercel.app/",
+    thumbnail: "https://i.imgur.com/FxB8GR0.png",
   },
   {
     title: "Rogue",
@@ -51,12 +51,12 @@ export const products = [
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/algochurn.png",
   },
-  
   {
-    title: "Gymdex",
-    link: "https://gymdex.vercel.app/",
-    thumbnail: "https://i.imgur.com/FxB8GR0.png",
+    title: "Esifi ",
+    link: "https://esifi-ismafavesco.vercel.app/",
+    thumbnail: "https://i.imgur.com/NVWMYy8.png", 
   },
+  
   {
     title: "SmartBridge",
     link: "https://smartbridgetech.com",
