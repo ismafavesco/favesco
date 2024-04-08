@@ -13,9 +13,9 @@ export const products = [
       "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
   },
   {
-    title: "Esifi ",
-    link: "https://esifi-ismafavesco.vercel.app/",
-    thumbnail: "https://i.imgur.com/NVWMYy8.png", 
+    title: "Gymdex",
+    link: "https://gymdex.vercel.app/",
+    thumbnail: "https://i.imgur.com/FxB8GR0.png",
   },
   {
     title: "Rogue",
@@ -51,12 +51,12 @@ export const products = [
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/algochurn.png",
   },
-  
   {
-    title: "Gymdex",
-    link: "https://gymdex.vercel.app/",
-    thumbnail: "https://i.imgur.com/FxB8GR0.png",
+    title: "Esifi ",
+    link: "https://esifi-ai.com",
+    thumbnail: "https://i.imgur.com/NVWMYy8.png", 
   },
+  
   {
     title: "SmartBridge",
     link: "https://smartbridgetech.com",
@@ -97,7 +97,7 @@ const Showcase = () => {
       </motion.div>
       <motion.div variants={riseUpItem} className="">
         <p className="text-center text-[#686869] font-medium lg:text-base text-[80%]">
-         Showcasing our products, collaborations, and partner agencies.
+         Showcasing our products and collaborations.
         </p>
       </motion.div>
     </div>
