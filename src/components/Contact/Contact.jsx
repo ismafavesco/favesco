@@ -44,8 +44,8 @@ const Contact = () => {
             <option value="">Select Budget (USD)</option>
             <option value="<2500">Less than $2,500</option>
             <option value="2500-5000">$2,500 - $5,000</option>
-            <option value="5000-12000">$5,000 - $20,000</option>
-            <option value=">12000">More than $20,000</option>
+            <option value="5000-20000">$5,000 - $20,000</option>
+            <option value=">20000">More than $20,000</option>
           </select>
           <div className="absolute inset-y-0 right-0 flex items-center px-4 pointer-events-none">
             <svg
