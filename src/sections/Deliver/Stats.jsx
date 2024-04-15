@@ -23,9 +23,9 @@ const Stats = () => {
   };
 
   const stats = [
-    { value: "900", icon: <BiPlusMedical className="mt-[12px] text-[1.2rem] lg:text-[3rem] text-[#a0d9f7]" />, text: "Hours of Development" },
-    { value: "20", icon: <BiPlusMedical className="mt-[12px] text-[1.2rem] lg:text-[3rem] text-[#0888ca]" />, text: "Technologies used" },
-    { value: "11", icon: <BiPlusMedical className="mt-[12px] text-[1.2rem] lg:text-[3rem] text-[#7667ab]" />, text: "Happy Clients" },
+    { value: "40k", icon: <BiPlusMedical className="mt-[12px] text-[1.2rem] lg:text-[3rem] text-[#a0d9f7]" />, text: "Hours of Development" },
+    { value: "20", icon: <BiPlusMedical className="mt-[12px] text-[1.2rem] lg:text-[3rem] text-[#0888ca]" />, text: "Happy Clients " },
+    { value: "8", icon: <BiPlusMedical className="mt-[12px] text-[1.2rem] lg:text-[3rem] text-[#7667ab]" />, text: "Frameworks" },
     { value: "24/7", icon: null, text: "1 on 1 Support" },
   ];
 
@@ -48,8 +48,8 @@ const Stats = () => {
         ))}
         <motion.div variants={riseUpItem} className="hidden lg:block">
           <p className="text-[1rem] text-[#929294]">
-            Buisnesses not using digital solutions lose opportunities for growth and profitability.
-          </p>
+          Businesses must adapt and innovate to stay competitive. Our job is to help you achieve a modern and creative adaptation. 
+                   </p>
         </motion.div>
       </motion.div>
       <div className="relative overflow-hidden">

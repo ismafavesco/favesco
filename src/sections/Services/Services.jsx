@@ -98,7 +98,7 @@ const ServiceCard = ({ imgSrc, title, description, link }) => {
     },
     hovered: {
       scale: 1.1,
-      rotate: 5,
+    
     },
   };
 

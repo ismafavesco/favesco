@@ -1,15 +1,43 @@
 import { Link } from "react-scroll";
 import Logo from "../../assets/images/Logo White.png";
-import { motion } from "framer-motion";
-import { useContext } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { useContext, useState } from "react";
 import { AnimationContext } from "../../context/animation";
 import { FaInstagram, FaFacebook, FaMapMarkerAlt, FaTwitter, FaWhatsapp, FaTiktok } from "react-icons/fa";
 
 const Footer = () => {
   const { riseUpVariant2, riseUpItem } = useContext(AnimationContext);
+  const [desktopNav, setDesktopNav] = useState(false);
+
+  const handleDesktopNav = () => {
+    setDesktopNav(true);
+    setTimeout(() => {
+      setDesktopNav(false);
+    }, 1000);
+  };
 
   return (
     <div data-scroll-section>
+      {/* Black Background Overlay */}
+      <AnimatePresence>
+        {desktopNav && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed top-0 left-0 right-0 bottom-0 bg-black z-50"
+          >
+            <motion.div
+              initial={{ y: "-100%" }}
+              animate={{ y: 0 }}
+              exit={{ y: "-100%" }}
+              transition={{ duration: 0.5 }}
+              className="h-screen"
+            />
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       <footer className="pt-[4rem] lg:pt-[0rem] lg:w-[90%] max-w-[1200px] m-auto px-4 sm:px-6 lg:px-10">
         <div className="flex flex-col md:flex-row justify-between border-t border-gray-700 pt-8 sm:pt-8">
           {/* Left */}
@@ -72,17 +100,17 @@ const Footer = () => {
               <h3 className="text-lg sm:text-xl font-semibold text-white mb-2 sm:mb-4">Quick Links</h3>
               <ul className="text-gray-400 text-sm sm:text-base">
                 <li className="mb-1 sm:mb-2">
-                  <Link to="about" smooth={true} duration={200} className="hover:text-white cursor-pointer transition duration-300">
+                  <Link to="about" smooth={true} duration={200} className="hover:text-white cursor-pointer transition duration-300" onClick={handleDesktopNav}>
                     What We Deliver
                   </Link>
                 </li>
                 <li className="mb-1 sm:mb-2">
-                  <Link to="showcase" smooth={true} duration={200} className="hover:text-white cursor-pointer transition duration-300">
+                  <Link to="showcase" smooth={true} duration={200} className="hover:text-white cursor-pointer transition duration-300" onClick={handleDesktopNav}>
                     Showcase
                   </Link>
                 </li>
                 <li className="mb-1 sm:mb-2">
-                  <Link to="services" smooth={true} duration={200} className="hover:text-white cursor-pointer transition duration-300">
+                  <Link to="services" smooth={true} duration={200} className="hover:text-white cursor-pointer transition duration-300" onClick={handleDesktopNav}>
                     Services
                   </Link>
                 </li>
