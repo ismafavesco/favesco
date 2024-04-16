@@ -3,7 +3,7 @@ import Logo from "../../assets/images/Logo White.png";
 import { motion, AnimatePresence } from "framer-motion";
 import { useContext, useState } from "react";
 import { AnimationContext } from "../../context/animation";
-import { FaInstagram, FaFacebook, FaMapMarkerAlt, FaTwitter, FaWhatsapp, FaTiktok } from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaMapMarkerAlt, FaTwitter, FaWhatsapp, FaTiktok, FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
   const { riseUpVariant2, riseUpItem } = useContext(AnimationContext);
@@ -91,10 +91,14 @@ const Footer = () => {
                 <FaMapMarkerAlt className="mr-1 sm:mr-2" size={16} sm={20} />
                 Arizona, United States
               </p>
-              <p className="text-gray-400 flex items-center text-sm sm:text-base">
+              <a href="https://wa.me/14803840486" target="_blank" rel="noopener noreferrer" className="text-gray-400 flex items-center mb-1 sm:mb-2 text-sm sm:text-base hover:text-white transition duration-300">
                 <FaWhatsapp className="mr-1 sm:mr-2" size={16} sm={20} />
                 +1 480-384-0486
-              </p>
+              </a>
+              <a href="mailto:support@favesco.tech" target="_blank" rel="noopener noreferrer" className="text-gray-400 flex items-center text-sm sm:text-base hover:text-white transition duration-300">
+                <FaEnvelope className="mr-1 sm:mr-2" size={16} sm={20} />
+                support@favesco.tech
+              </a>
             </motion.div>
             <motion.div variants={riseUpItem} className="sm:w-1/2 sm:pl-4">
               <h3 className="text-lg sm:text-xl font-semibold text-white mb-2 sm:mb-4">Quick Links</h3>
