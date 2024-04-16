@@ -93,7 +93,7 @@ const Contact = () => {
             id="message"
             name="message"
             className="w-full px-4 py-3 text-lg border-2 border-gray-200 rounded-lg focus:outline-none focus:border-[#3C78FF] transition duration-300 resize-none h-40"
-            placeholder="Describe your project and requirements"
+            placeholder="Describe your project and requirements. We will get in touch with you for more details."
             required
           ></textarea>
         </div>
