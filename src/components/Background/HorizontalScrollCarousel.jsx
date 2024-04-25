@@ -13,6 +13,7 @@ const stepIcons = {
   Maintenance: <FaTools className="text-4xl md:text-6xl text-[#A0D9F7]" />,
 };
 
+
 const Card = React.memo(({ card }) => (
   <motion.div
     key={card.id}
@@ -42,7 +43,7 @@ const HorizontalScrollCarousel = () => {
 
   return (
     <section ref={targetRef} className="relative h-[300vh]">
-      <div className="sticky top-12 lg:bottom-1 flex h-screen items-center overflow-hidden">
+      <div className="sticky top-12 bottom-1 lg:h-screen  flex h-[50rem] items-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-12">
           {cards.map((card) => (
             <Card key={card.id} card={card} />
