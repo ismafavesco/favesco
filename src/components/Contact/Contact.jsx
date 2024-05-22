@@ -42,8 +42,8 @@ const Contact = () => {
             required
           >
             <option value="">Select Budget (USD)</option>
-            <option value="<2500">Less than $2,500</option>
-            <option value="2500-5000">$2,500 - $5,000</option>
+            <option value="<1500">Less than $1,500</option>
+            <option value="1500-5000">$1,500 - $5,000</option>
             <option value="5000-20000">$5,000 - $20,000</option>
             <option value=">20000">More than $20,000</option>
           </select>
