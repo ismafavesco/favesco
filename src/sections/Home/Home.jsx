@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <div id="home" data-scroll-section>
       <Navbar />
-      <div className="bg-[#f1f1f1] rounded-bl-[2rem] lg:rounded-bl-[4rem] lg:pb-[11rem] rounded-br-[2rem] lg:rounded-br-[4rem] relative">
+      <div className="bg-[#f1f1f1] rounded-bl-[5rem] lg:rounded-bl-[4rem] lg:pb-[11rem] rounded-br-[5rem] lg:rounded-br-[4rem] relative">
         <div className="h-[85vh] sl:h-[60vh] max-w-[1200px] m-auto relative">
           <div className="py-[5rem] lg:pb-[0rem] flex flex-col items-center lg:flex-row lg:gap-8 lg:px-[2rem] px-[1rem]">
             <motion.div

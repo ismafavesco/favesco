@@ -57,7 +57,7 @@ const Stats = () => {
           baseVelocity={-5}
           className="flex gap-4 items-center justify-between py-4 border-b border-gray-600"
         >
-          WebSite - Landing Page - E-commerce - Mobile App - CRM - AI Automation - SaaS - DataBase - Admin Dashboard -
+        WebSite - Landing Page - E-commerce - Mobile App - CRM - AI Automation - SaaS - DataBase - Admin Dashboard -
           Branding -
         </ScrollText>
       </div>

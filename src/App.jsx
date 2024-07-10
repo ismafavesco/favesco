@@ -9,6 +9,9 @@ import Footer from "./sections/Footer/Footer";
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/react"
 const App = () => {
+
+
+  
   return (
     <main className="bg-[#1e1e20]">
       <Home />

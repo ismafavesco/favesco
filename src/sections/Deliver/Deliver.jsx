@@ -51,21 +51,22 @@ const Deliver = () => {
 
           <motion.p
             variants={riseUpItem}
-            className="text-[#929294] font-medium lg:text-base text-[80%]"
+            className="text-[#929294] font-medium lg:text-base text-[90%]"
           >
-            Think of us as your personal business tailors. We don't do one-size-fits-all; we craft strategies that fit your business like a custom-made suit. Our goal is to make your digital dreams a reality and help you stand out in the competitive landscape.
+        We build digital tools that work for your business. No templates, no fluff – just solid code and smart design that fits your needs.
           </motion.p>
           <motion.p
             variants={riseUpItem}
-            className="text-[#929294] font-medium lg:text-base text-[80%]"
+            className="text-[#929294] font-medium lg:text-base text-[90%]"
           >
-Our team of expert developers and designers work closely with you, keeping you in the loop every step of the way. We believe in transparency, collaboration, and delivering results that exceed your expectations.          </motion.p>
+          Our team keeps things simple: we talk to you, understand what you need, and build it. We've helped new businesses get online and old ones update their tech.
+           </motion.p>
           <motion.p
             variants={riseUpItem}
-            className="text-[#929294] font-medium lg:text-base text-[80%]"
+            className="text-[#929294] font-medium lg:text-base text-[90%]"
           >
-         From landing pages to sophisticated mobile apps, we offer flexible partnership models to suit your needs. Whether you prefer a one-time project or an ongoing collaboration, we've got you covered. Our dedicated support  will make you feel like you have your very own IT department.
-          </motion.p>
+What makes us different? We speak plain English or Spanish, not tech jargon. With our 1-on-1 support whenever you need it, you'll feel like you have your own IT department.
+</motion.p>
           
         </motion.div>
       </div>

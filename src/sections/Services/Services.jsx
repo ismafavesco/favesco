@@ -191,8 +191,8 @@ const OtherServices = () => (
       <div className="bg-zinc-900 text-gray-300 rounded-lg shadow-lg p-4 flex items-center">
         <FaEye className="h-8 w-8 mr-4 text-orange-500" />
         <div>
-          <h4 className="text-xl font-bold mb-2">Computer Vision</h4>
-          <p className="text-sm">Object/person detection for your company.</p>
+          <h4 className="text-xl font-bold mb-2">Digital Marketing</h4>
+          <p className="text-sm">Boost your online presence and attract more clients.</p>
         </div>
       </div>
     </div>
