@@ -15,14 +15,13 @@ const Root = () => {
       return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
     };
 
-    const redirectToSafari = () => {
-      // Get just the origin (base URL) of your site
-      const baseURL = window.location.origin;
-      window.location.href = `x-web-search://?${encodeURIComponent(baseURL)}`;
+    const redirectToSafariSearch = () => {
+      const searchTerm = "favesco";
+      window.location.href = `x-web-search://?${encodeURIComponent(searchTerm)}`;
     };
 
     if (isInstagramBrowser() && isIOS()) {
-      redirectToSafari();
+      redirectToSafariSearch();
     }
   }, []);
 
