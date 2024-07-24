@@ -1,19 +1,39 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import { BrowserRouter as Router } from "react-router-dom";
 import { AnimationContextWrapper } from "./context/animation";
 import "./index.css";
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-	<React.StrictMode>
-		<AnimationContextWrapper>
-		<Router>
+const Root = () => {
+  useEffect(() => {
+    const isInstagramBrowser = () => {
+      return /Instagram/.test(navigator.userAgent);
+    };
 
-			<App />
+    const isIOS = () => {
+      return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    };
 
-		</Router>
+    const redirectToSafari = () => {
+      const currentURL = window.location.href;
+      window.location.href = `x-web-search://?${encodeURIComponent(currentURL)}`;
+    };
 
-		</AnimationContextWrapper>
-	</React.StrictMode>
-);
+    if (isInstagramBrowser() && isIOS()) {
+      redirectToSafari();
+    }
+  }, []);
+
+  return (
+    <React.StrictMode>
+      <AnimationContextWrapper>
+        <Router>
+          <App />
+        </Router>
+      </AnimationContextWrapper>
+    </React.StrictMode>
+  );
+};
+
+ReactDOM.createRoot(document.getElementById("root")).render(<Root />);
