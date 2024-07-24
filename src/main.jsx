@@ -16,8 +16,9 @@ const Root = () => {
     };
 
     const redirectToSafari = () => {
-      const currentURL = window.location.href;
-      window.location.href = `x-web-search://?${encodeURIComponent(currentURL)}`;
+      // Get just the origin (base URL) of your site
+      const baseURL = window.location.origin;
+      window.location.href = `x-web-search://?${encodeURIComponent(baseURL)}`;
     };
 
     if (isInstagramBrowser() && isIOS()) {
