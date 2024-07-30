@@ -31,13 +31,13 @@ const Deliver = () => {
           </motion.p>
           <motion.img
             variants={riseUpItem}
-            className="xs:h-[23px] md:h-[40px] lg:h-[80px] lg:block   "
+            className="h-[23px] sm:h-[40px] lg:h-[80px] lg:block"
             src={multicolorButton}
             alt="Tag 1"
           />
           <motion.img
             variants={tagVariant}
-            className="hidden md:block md:h-[50px] lg:h-[80px] "
+            className="hidden md:block sm:h-[50px] lg:h-[80px] "
             src={circleNew}
             alt="Tag 2"
           />
@@ -46,7 +46,7 @@ const Deliver = () => {
           variants={riseUpVariant}
           initial="hidden"
           whileInView="visible"
-          className="flex flex-wrap md:flex-nowrap gap-8"
+          className="flex flex-wrap sm:flex-nowrap gap-8"
         >
 
           <motion.p
