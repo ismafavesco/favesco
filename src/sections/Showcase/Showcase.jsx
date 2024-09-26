@@ -58,10 +58,10 @@ export const products = [
   },
   
   {
-    title: "SmartBridge",
-    link: "https://smartbridgetech.com",
+    title: "Furrow",
+    link: "https://furrow-seven.vercel.app",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/smartbridge.png",
+      "https://i.ibb.co/J77zV4t/Screenshot-2024-09-24-211221.png",
   },
   
 

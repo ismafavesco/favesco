@@ -62,7 +62,7 @@ const Services = () => {
             imgSrc={img3}
             title="Digital Solutions for Businesses"
             description="We offer a wide range of custom digital and software services, from process automation to optimize time and resources, database system administration, to cloud solutions."
-            link="More products →"
+            link="Give us a call →"
           />
           <ServiceCard
             imgSrc={img2}
